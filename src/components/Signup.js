@@ -36,9 +36,9 @@ const Signup = (props) => {
           }
     }
   return (
-    <div className='container login-container'>
+    <div className='container mt-5 login-container'>
         <form onSubmit={handleSubmit}>
-            <div className='mt-5'>
+            <div className='mt-2'>
               <h2>Register to access your notes</h2>
                 <label htmlFor="name" className="form-label">Name</label>
                 <input type="text" placeholder='Enter the name' className="form-control" name='name' id="name" onChange={onchange} required/>
@@ -55,8 +55,8 @@ const Signup = (props) => {
                 <label htmlFor="cpassword" className="form-label">Confirm Password</label>
                 <input type="password" placeholder='Confirm your password' name='cpassword' className="form-control" id="cpassword" onChange={onchange} minLength={5} required/>
             </div>
-            <div className="text-center d-grid mx-5 mb-5">
-            <button type="submit" className="btn btn-info mt-5">SignUp</button>
+            <div className="text-center d-grid mx-5 mb-4">
+            <button type="submit" className="btn btn-info mt-4">SignUp</button>
             </div>
         </form>
     </div>

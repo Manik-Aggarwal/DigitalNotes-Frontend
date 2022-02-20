@@ -34,10 +34,10 @@ const Login = (props) => {
     }
 
   return (
-    <div className='container login-container'>
+    <div className='container mt-5 login-container'>
         <form onSubmit={handleSubmit}>
-            <div className='mt-3'>
-              <h2 className='mt-5'>Login to Continue</h2>
+            <div className='mt-2'>
+              <h2>Login to Continue</h2>
                 <label htmlFor="email" className="form-label">Email address</label>
                 <input type="email" placeholder='Enter the email' name='email' className="form-control" value={credentials.email} onChange={onChange} id="email" aria-describedby="emailHelp" required/>
                 <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
@@ -52,7 +52,9 @@ const Login = (props) => {
             </div>
         </form>
         <div className='text-center d-grid mx-5'>
-            <h5 className='mt-5'>Don't have an account?</h5> <button type="submit" className="btn btn-info mb-4">SignUp</button>
+            <h5 className='mt-5'>Don't have an account?</h5> 
+            {/* <button type="submit" className="btn btn-info mb-4">SignUp</button> */}
+            <a href='/signup' className="btn btn-warning mb-4" role="button">Signup</a>
         </div>
     </div>
   )
